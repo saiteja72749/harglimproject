@@ -28,7 +28,7 @@ class Form extends Component {
     // }
     handleSubmit=(event)=>{
       
-        // alert(`development is in pending`)
+        alert(`development is in pending`)
         // ${this.state.topic}
         event.preventDefault()
     }
