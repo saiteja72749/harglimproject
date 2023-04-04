@@ -23,15 +23,23 @@ import LifeCycleUpdate from './LifeCycleUpdate';
 import Fragments from './Components/Fragments';
 import Table from './Components/Table';
 import ParentComp from './Components/ParentComp';
+import SignUp from './Components/SignUp';
+import Refs from './Components/Refs';
+import Ref2 from './Components/Ref2';
+import FocusInput from './Components/FocusInput';
 function App() {
   return (
     <div className="sst" id="we">
+      {/* <Ref2/> */}
+      {/* <FocusInput/> */}
+            {/* <Refs/> */}
       {/* <ParentComp/> */}
       {/* <LifeCycleUpdate/> */}
       {/* <LifeCycleMount/> */}
       {/* <Table/> */}
       {/* <Fragments/> */}
-      <Form/>
+      <SignUp/>
+      {/* <Form/> */}
       {/* <h1 className='error'>that's me</h1>
       <h1 className={styles.me}>mahi</h1>
       <StyleSheet primary={true}/> */}

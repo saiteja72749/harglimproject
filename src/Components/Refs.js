@@ -7,17 +7,19 @@ class Refs extends Component {
     }
     componentDidMount(){
         this.inputRef.current.focus()
-        console.log(this.inputRef)
+        console.log(this.inputRef) 
     }
     clickHandler=()=>{
     alert(this.inputRef.current.value)
     }
   render() {
     return (
+      <center>
       <div>
         <input type="text" ref={this.inputRef}/>
         <button onClick={this.clickHandler}>click</button>
       </div>
+      </center>
     )
   }
 }

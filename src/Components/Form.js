@@ -5,8 +5,9 @@ class Form extends Component {
       super(props)
     
       this.state = {
-         username:" ",
-         password:" "
+         username:"",
+         password:"",
+         confirmpassword:""
 
       }
     }
@@ -16,9 +17,9 @@ class Form extends Component {
             username: event.target.value
         })
     }
-    handleCommentChange=(event)=>{
+    handlePasswordChange=(event)=>{
         this.setState({
-            comment: event.target.value
+            password: event.target.value
         })
     }
     // handleTopicChange=(event)=>{
@@ -26,27 +27,53 @@ class Form extends Component {
     //        topic: event.target.value 
     //     })
     // }
+    handleConfirmPasswordChange=(event)=>{
+      this.setState({
+        ConfirmPassword: event.target.value
+      })
+    }
+    // componentDidUpdate=()=>{
+    //   console.log("updated")
+    // }
     handleSubmit=(event)=>{
-      
-        alert(`development is in pending`)
+      if(this.state.username.length<=5){
+        alert(`please enter a valid username of greater than 5 characters`)
+        console.log("re-correct userName")
+      }
+      else if(this.state.password!==this.state.ConfirmPassword){
+        alert("check your password")
+        console.log("check your password")
+      }
+      else{
+        alert(`LOGIN SUCCESSFUL ${this.state.username} ${this.state.password} ${this.state.confirmpassword}`)
+        console.log("login successful")
+      }
+        // alert(`development is in pending`)
         // ${this.state.topic}
         event.preventDefault()
     }
   render() {
     return (
+      <center>
+        <h1>HARGLIM</h1>
         <form onSubmit={this.handleSubmit}>
-          <h1>WELCOME TO HARGLIM</h1>
           <h4>enter your login credentials to move further</h4>
       <div>
         <label>UserName: </label>
         <input type='text' 
+        
         value={this.state.username} 
         onChange={this.handleUsernameChange}/>
        </div>
        <div>
         <label>Password: </label>
-        <input type='Password' value={this.state.comment} 
-            onChange={this.handleCommentChange}/>
+        <input type='Password' value={this.state.password} 
+            onChange={this.handlePasswordChange}/>
+       </div>
+       <div>
+        <label>Confirm Password: </label>
+        <input type="password" value={this.state.newpassword} 
+        onChange={this.handleConfirmPasswordChange}/>
        </div>
        {/* <div>
         <label>Topic</label>
@@ -60,6 +87,7 @@ class Form extends Component {
        
         <button type='submit'>Login</button>
       </form>
+      </center>
     )
   }
 }
