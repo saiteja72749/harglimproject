@@ -131,6 +131,7 @@ class SignUp extends Component {
         </select>
       </div>
       <button type='submit'>submit</button>
+      <p>NOTE: only valid credentials are allowed</p>
      </form>
       </center>
     )
