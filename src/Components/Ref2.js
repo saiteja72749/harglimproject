@@ -5,7 +5,7 @@ export class Ref2 extends Component {
       super(props)
         this.inputRef=React.createRef()
         this.cbRef=null
-        this.setcbRef=element=>{
+        this.setcbRef=(element)=>{
             this.cbRef=element
         }
     }
@@ -18,6 +18,7 @@ export class Ref2 extends Component {
     }
     clickHandler=()=>{
         alert(this.inputRef.current.value)
+        console.log(this.inputRef.current.value)
     }
 
   render() {

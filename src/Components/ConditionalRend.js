@@ -4,20 +4,20 @@ class ConditionalRend extends Component {
       super(props)
     
       this.state = {
-         isLoggedIn:true
+         isLoggedIn:false
         }
     }
 
   render() {
-    // return this.state.isLoggedIn && <div>Hello Sai</div>
+    return this.state.isLoggedIn && <div>Hello Sai</div>
 
 
-    return this.state.isLoggedIn ? (
-        <div>Hello Sai</div>
-    ):
-    (
-        <div>Hello Teja</div>
-    )
+    // return this.state.isLoggedIn ? (
+    //     <div>Hello Sai</div>
+    // ):
+    // (
+    //     <div>Hello Teja</div>
+    // )
 
 
     // let message

@@ -11,6 +11,7 @@ class Refs extends Component {
     }
     clickHandler=()=>{
     alert(this.inputRef.current.value)
+    console.log(this.inputRef.current.value)
     }
   render() {
     return (

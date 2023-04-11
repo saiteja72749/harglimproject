@@ -27,12 +27,18 @@ import SignUp from './Components/SignUp';
 import Refs from './Components/Refs';
 import Ref2 from './Components/Ref2';
 import FocusInput from './Components/FocusInput';
+import ForwardRefparent from './Components/ForwardRefparent';
+import ForwardingRefs from './Components/ForwardingRefs';
+import CountMini from './Components/CountMini';
 function App() {
   return (
     <div className="sst" id="we">
+      <CountMini/>
+      {/* <ForwardingRefs/> */}
+      {/* <ForwardRefparent/> */}
       {/* <Ref2/> */}
       {/* <FocusInput/> */}
-            {/* <Refs/> */}
+      {/* <Refs/> */}
       {/* <ParentComp/> */}
       {/* <LifeCycleUpdate/> */}
       {/* <LifeCycleMount/> */}
@@ -53,8 +59,8 @@ function App() {
       <Hello name= 'teja'/>
       <button>click</button>
       <Hey/>
-      <Message/>
-      <Count/> */}
+      <Message/> */}
+      {/* <Count/> */}
       {/* <Sai/> */}
       {/* <Project/>
       <Hello name= 'sai teja' myName= 'mahi'/>

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class SignUp extends Component {
     constructor(props) {
         super(props)
-      
+        
         this.state = {
            userName:"",
            phoneNumber:"",
@@ -11,7 +11,9 @@ class SignUp extends Component {
            setPassword:"",
            confirmPassword:"",
            typeOfAccount:"",
+          
         }
+      //  this.inputRef=React.createRef()
       }
       handleUserNameChange=(event)=>{
           this.setState({
@@ -66,8 +68,10 @@ class SignUp extends Component {
           `)
           console.log("account verified")
         }
-        
-        
+        // componentDidMount(){
+        //   this.inputRef.current.focus()
+        //   console.log(this.inputRef)
+        // } 
         // else if(this.state.setPassword===this.state.confirmPassword){
         //   alert(`
         //   ${this.state.userName}
