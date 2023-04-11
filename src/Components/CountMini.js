@@ -18,7 +18,7 @@ class CountMini extends Component {
     return (
       <div>
         <center>
-         <p>no login credentials? that's okay guys. You can do some tym ps here by clicking on the button shown below</p>
+         <p>not interested to create account on HARGLIM? that's okay guys. You can do some tym ps here by clicking on the button shown below</p>
         {this.state.count}
         <button onClick={()=>{this.increment()}}>click</button>
         </center>

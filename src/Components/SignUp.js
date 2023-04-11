@@ -134,8 +134,8 @@ class SignUp extends Component {
            <option value="professionalaccount">professionalaccount</option>
         </select>
       </div>
-      <button type='submit'>submit</button>
-      <p>NOTE: only valid credentials are allowed</p>
+      <button type='submit'>create account</button>
+      <p>NOTE: once you click on signup, one must enter the OTP received to the respected mobile number or mail id</p>
      </form>
       </center>
     )
