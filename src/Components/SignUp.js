@@ -48,7 +48,7 @@ class SignUp extends Component {
       handleSubmit=(event)=>{
         if(this.state.userName.length<=5)
         {
-          alert("username must be 5 characters")
+          alert("username must be greater than 5 characters")
           console.log("re-correct userName")
         }
         else if(this.state.setPassword!==this.state.confirmPassword)
@@ -61,8 +61,8 @@ class SignUp extends Component {
           ${this.state.userName}
           ${this.state.phoneNumber} 
           ${this.state.mailId} 
-          ${this.state.setPassword} 
-          ${this.state.confirmPassword} 
+          // ${this.state.setPassword} 
+          // ${this.state.confirmPassword} 
           ${this.state.typeOfAccount}
           account verified
           `)
