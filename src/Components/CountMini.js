@@ -17,8 +17,11 @@ class CountMini extends Component {
   render() {
     return (
       <div>
+        <center>
+         <p>no login credentials? that's okay guys. You can do some tym ps here by clicking on the button shown below</p>
         {this.state.count}
         <button onClick={()=>{this.increment()}}>click</button>
+        </center>
       </div>
     )
   }
