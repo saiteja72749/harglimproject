@@ -30,10 +30,30 @@ import FocusInput from './Components/FocusInput';
 import ForwardRefparent from './Components/ForwardRefparent';
 import ForwardingRefs from './Components/ForwardingRefs';
 import CountMini from './Components/CountMini';
+import ErrorBound from './ErrorBound';
+import ErrorBoundary from './Components/ErrorBoundary';
+import CountHooks from './Components/CountHooks';
+import CounterHook2 from './CounterHook2';
+import HookState from './Components/HookState';
+import ListHooks from './Components/ListHooks';
+
 function App() {
   return (
     <div className="sst" id="we">
-      <CountMini/>
+      {/* <ErrorBoundary>
+      <ErrorBound name='dad'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <ErrorBound name='parents'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <ErrorBound name='bro'/>
+      </ErrorBoundary> */}
+      {/* <ListHooks/> */}
+      {/* <HookState/> */}
+      <CountHooks/>
+      {/* <CounterHook2/> */}
+      {/* <CountMini/> */}
       {/* <ForwardingRefs/> */}
       {/* <ForwardRefparent/> */}
       {/* <Ref2/> */}
@@ -44,7 +64,7 @@ function App() {
       {/* <LifeCycleMount/> */}
       {/* <Table/> */}
       {/* <Fragments/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
       {/* <Form/> */}
       {/* <h1 className='error'>that's me</h1>
       <h1 className={styles.me}>mahi</h1>
