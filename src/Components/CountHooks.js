@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 
 function CountHooks() {
     const [count,setCount]=useState(0)
-    const func=(()=>{
+    const func=()=>{
         setCount(count+1)
-    })
+    }
     console.log("callback value",count)
   return (
     <div>

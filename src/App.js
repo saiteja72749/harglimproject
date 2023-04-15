@@ -51,7 +51,7 @@ function App() {
       </ErrorBoundary> */}
       {/* <ListHooks/> */}
       {/* <HookState/> */}
-      <CountHooks/>
+      {/* <CountHooks/> */}
       {/* <CounterHook2/> */}
       {/* <CountMini/> */}
       {/* <ForwardingRefs/> */}
@@ -64,7 +64,7 @@ function App() {
       {/* <LifeCycleMount/> */}
       {/* <Table/> */}
       {/* <Fragments/> */}
-      {/* <SignUp/> */}
+      <SignUp/>
       {/* <Form/> */}
       {/* <h1 className='error'>that's me</h1>
       <h1 className={styles.me}>mahi</h1>
