@@ -3,6 +3,11 @@ import React, { createRef, useEffect, useRef, useState } from 'react'
 function Calculator() {
     const [value,setValue]=useState('')
     const [result,setResult]=useState(0)
+
+    function final(){
+        setValue(eval(value))
+        setResult(eval(value))
+    }
     
     const inputRef=useRef(null)
     const FocusOn=()=>{
@@ -41,7 +46,7 @@ function Calculator() {
         <button onClick={()=>setValue(value+'00')}>00</button>
         <button onClick={()=>setValue(value+'0')}>0</button>
         <button onClick={()=>setValue(value+'.')}>.</button>
-        <button onClick={()=>(setResult(eval(value)), setValue(value+'='+(eval(value))))}>=</button>
+        <button onClick={final}>=</button>
     </center>
     </div>
   )
