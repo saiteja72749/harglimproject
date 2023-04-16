@@ -36,6 +36,12 @@ import CountHooks from './Components/CountHooks';
 import CounterHook2 from './CounterHook2';
 import HookState from './Components/HookState';
 import ListHooks from './Components/ListHooks';
+import UseEffect from './Components/UseEffect';
+import MouseListener, { MouseListenerClass } from './Components/MouseListenerClass';
+import MouseListnerUseEffect from './Components/MouseListnerUseEffect';
+import CleanUpCode from './Components/CleanUpCode';
+import TimerHook from './Components/TimerHook';
+import Calculator from './Components/Calculator';
 
 function App() {
   return (
@@ -49,6 +55,12 @@ function App() {
       <ErrorBoundary>
       <ErrorBound name='bro'/>
       </ErrorBoundary> */}
+      {/* <UseEffect/> */}
+      <Calculator/>
+      {/* <MouseListnerUseEffect/> */}
+      {/* <CleanUpCode/> */}
+      {/* <TimerHook/> */}
+      {/* <MouseListenerClass/> */}
       {/* <ListHooks/> */}
       {/* <HookState/> */}
       {/* <CountHooks/> */}
@@ -64,7 +76,7 @@ function App() {
       {/* <LifeCycleMount/> */}
       {/* <Table/> */}
       {/* <Fragments/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
       {/* <Form/> */}
       {/* <h1 className='error'>that's me</h1>
       <h1 className={styles.me}>mahi</h1>
