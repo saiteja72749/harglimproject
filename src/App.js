@@ -42,10 +42,18 @@ import MouseListnerUseEffect from './Components/MouseListnerUseEffect';
 import CleanUpCode from './Components/CleanUpCode';
 import TimerHook from './Components/TimerHook';
 import Calculator from './Components/Calculator';
+import DataFetchingPosts from './Components/DataFetchingPosts';
+import DataFetchingAlbums from './Components/DataFetchingAlbums';
+import DataFetchingIndi from './Components/DataFetchingIndi';
+import { Gmail } from './Components/Email';
 
 function App() {
   return (
     <div className="sst" id="we">
+      <Gmail/>
+      {/* <DataFetchingIndi/> */}
+      {/* <DataFetchingPosts/> */}
+      {/* <DataFetchingAlbums/> */}
       {/* <ErrorBoundary>
       <ErrorBound name='dad'/>
       </ErrorBoundary>
@@ -56,7 +64,7 @@ function App() {
       <ErrorBound name='bro'/>
       </ErrorBoundary> */}
       {/* <UseEffect/> */}
-      <Calculator/>
+      {/* <Calculator/> */}
       {/* <MouseListnerUseEffect/> */}
       {/* <CleanUpCode/> */}
       {/* <TimerHook/> */}
